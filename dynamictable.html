@@ -1,0 +1,35 @@
+<html>
+  <head><title></title></head>
+  <body>
+    <script>
+      let tbl = "<table id='dynamicTable' border='1'>";
+ 
+      for(let i = 0; i<5; i++) {
+        tbl += "<tr>";
+        for(let j = 0; j<5; j++) {
+          if( i == j ) {
+            tbl += "<td class='red'>" + (i+1) + ":" + (j+1) + "</td>";
+          } else { 
+            tbl += "<td>" + (i+1) + ":" + (j+1) + "</td>";
+          }
+        }
+        tbl += "</tr>";
+      }
+
+      tbl += "</table>"; 
+
+      document.body.innerHTML = tbl;
+
+      console.log(tbl);
+
+      document.querySelector(".red").style.background = "#f00";
+    /*  for(let i=0; i<5; i++) {
+        for(let j=0; j<5; j++) {
+          if( i == j ) {
+             document.getElementsByClassName('.red').style.background = "#f00";
+          }
+        }
+      } */
+    </script>
+  </body>
+</html>

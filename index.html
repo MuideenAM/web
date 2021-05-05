@@ -1,0 +1,43 @@
+<html>
+<head><title></title></head>
+<body>
+<meter min="1" max="10" value="4"></meter>
+<progress min="1" max="10" value="4"></progress>
+<button onclick="writep()">Write P Content</button>
+<p id="test">
+<div id="qtest">
+  <p class="inside">This is within qtest.</p>
+</div>
+<p class="inside">This is without qtest.</p>
+<script>
+var sel = document.querySelectorAll('p');
+sel.style.background = 'red';
+alert(sel);
+</script>
+<script>
+/*let calculatePower = (x, n) => {
+  let x1 = x;
+  for(let i = 2; i <= n; i++) {
+    x *= x1;
+  }
+  return x;
+};
+
+alert( calculatePower(1, 100) ); // <-- Error! The variable is local to the functione that this page looks ok!' );
+//} */
+function writep() {
+//let p1 = document.querySelector("#test");
+test.innerHTML = "<button onclick='changeColor()'>Change background color</button>";
+}
+
+function changeColor() {
+  //document.body.style.background = "navy";
+  var sf = document.querySelector('.inside');
+  sf.style.color = "green";
+}
+
+
+</script>
+
+</body>
+</html>

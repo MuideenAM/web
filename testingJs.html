@@ -1,0 +1,28 @@
+<!DOCTYPE HTML><HTML>
+<HEAD>
+<SCRIPT type="text/javascript">
+  function handleClick() {
+    let btn = document.querySelector("#b");
+    let prg = document.querySelector("#para");
+    let hd = document.querySelector("#newhead");
+    let temp = "";
+ 
+    temp = prg.innerHTML;
+    prg.innerHTML = "<b>jQuery</b>" + temp;
+    prg.innerHTML += " <B>append() function</B>.";
+    prg.innerHTML += "<H3> This is the newly inserted heading.</H3>"; 
+    hd.style.visibility = 'hidden';
+  }
+</SCRIPT>			
+</HEAD>
+<BODY>
+<DIV align="center">
+</DIV>
+<H3>Complete the sentence:</H3>
+<P ID="para">is a javascript library that enables the 
+content to be appended after the inner content in the 
+selected element using the</P><BR>
+<H2 ID="newhead">This heading would be removed.</H2>
+<BUTTON ID="b" onclick="handleClick()">Click here</BUTTON>
+</BODY>
+</HTML>
